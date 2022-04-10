@@ -32,11 +32,19 @@ Jest
 Enzyme
 
 jest-cucumber
+
 Puppeteer
+
 Serverless
+
 Googleapis
+
 Axios
+
 Atatus
+
 nprogress
+
 Recharts
+
 gh-pages
