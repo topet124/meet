@@ -26,8 +26,11 @@ Scenario 4: Show error when user changes the settings (city, time range) Given a
 Scenario 5: Show a chart with the number of upcoming events in each city Given a user has chosen a city When the list of events is shown Then on top of the list a chart that visualizes the type of upcoming events will be shown
 # Technologies
 React
+
 Jest
+
 Enzyme
+
 jest-cucumber
 Puppeteer
 Serverless
