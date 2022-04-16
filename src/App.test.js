@@ -1,9 +1,15 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React, { Component } from "react";
+import "./App.css";
+import EventList from "./EventList";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <EventList />
+      </div>
+    );
+  }
+}
+
+export default App;
