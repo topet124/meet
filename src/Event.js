@@ -47,7 +47,7 @@ class Event extends Component {
                 rel="noreferrer"
                 target="_blank"
               >
-                See details on Google Calendar
+                See details on Google Calendar this is good
               </a>
             </div>
           )}

@@ -28,7 +28,7 @@ class NumberOfEvents extends Component {
     return (
       <div className="NumberOfEvents">
         <div>
-          <p id="search_number">Select the amount of events to be shown </p>
+          <p id="search_number">Select the amount of events to be  shown to clients </p>
           <input
             type="number"
             className="number-of-events"
@@ -45,3 +45,5 @@ class NumberOfEvents extends Component {
 }
 
 export default NumberOfEvents;
+
+//events
