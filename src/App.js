@@ -16,11 +16,14 @@ class App extends Component {
 
   async componentDidMount() {
     this.mounted = true;
-    getEvents().then((events) => {
+    await getEvents().then((events) => {
       if (this.mounted) {
-        this.setState({ events, locations: extractLocations(events) });
+        let locationsExtracted = extractLocations(events)
+        this.setState({ events, locations: locationsExtracted });
+        console.log('locations',locationsExtracted)
       }
     });
+    console.log('locationsstate',this.state.locations)
   }
 
   componentWillUnmount() {

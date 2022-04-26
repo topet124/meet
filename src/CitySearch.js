@@ -9,9 +9,10 @@ class CitySearch extends Component {
     suggestions: [],
     showSuggestions: undefined,
   };
-
+  
   handleInputChanged = (event) => {
     const value = event.target.value;
+    console.log('proplocaions',this.props.locations)
     this.setState({ showSuggestions: true });
     const suggestions = this.props.locations.filter((location) => {
       return location.toUpperCase().indexOf(value.toUpperCase()) > -1;
@@ -43,6 +44,7 @@ class CitySearch extends Component {
       <div className="CitySearch">
         <InfoAlert text={this.state.infoText} />
         <p id="search_text">Search location for tech events</p>
+        <div>
         <input
           type="text"
           className="city"
@@ -70,6 +72,7 @@ class CitySearch extends Component {
             <b>Search for cities</b>
           </li>
         </ul>
+        </div>
       </div>
     );
   }
